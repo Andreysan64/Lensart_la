@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lensart_la</title>
+    <link rel="stylesheet" href="../statics/css/Index.css">
+    <link rel="shortcut icon" href="../statics/img/Lens_Logo.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="Header-content">
+            <div class="Logo">
+                <img src="../statics/img/Lensart_la.png">
+            </div>
+            <div class="Barra-menu">
+                <nav>
+                    <ul>
+                        <li><a href="Index.html">INICIO</a></li>
+                        <div onpointerout="blurMenu()" onpointerover="toggleMenu()" class="Content">
+                            <li>
+                                <a href="#">PORTAFOLIO</a>
+                            </li>
+                            <div class="Sub-menu-wrap" id="SubMenu">
+                                <div class="Sub-menu">
+                                    <a href="#" class="Sub-menu-link">
+                                        <p>PRODUCTO</p>
+                                    </a>
+                                    <a href="#" class="Sub-menu-link">
+                                        <p>RETRATO</p>
+                                    </a>
+                                    <a href="#" class="Sub-menu-link">
+                                        <p>URBANO</p>
+                                    </a>
+                                    <a href="#" class="Sub-menu-link">
+                                        <p>EVENTO</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <li><a href="#">¿QUIENES SOMOS?</a></li>
+                        <a id="Content-button" href="https://api.whatsapp.com/send/?phone=%2B573107415917&text&type=phone_number&app_absent=0"><button>CONTACTO</button></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="Start-images">
+            <img src="../statics/img/Slogan.png" class="Slogan">
+            <img src="../statics/img/Edificio-1.jpg" class="Edificio">
+        </div>
+        <div class="Info">
+            <img src="../statics/img/Muestra.jpg" class="Muestra">
+            <div class="Texto">
+                <h5 class="Hola">HELLO</h5>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio impedit non corporis quos nesciunt exercitationem, aliquam, accusamus quibusdam et facilis saepe aspernatur. Incidunt ipsam sequi facilis tempore saepe laborum iure!</P>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    let SubMenu = document.getElementById("SubMenu");
+
+    function blurMenu() {
+        SubMenu.classList.remove("open-menu");
+    }
+
+    function toggleMenu(){
+        SubMenu.classList.toggle("open-menu");
+    }
+</script>
+</html>

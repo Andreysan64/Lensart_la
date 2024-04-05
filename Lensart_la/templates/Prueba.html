@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lensat_la</title>
+    <link rel="stylesheet" href="../statics/css/prueba.css">
+    <link rel="shortcut icon" href="../statics/img/Lens_Logo.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#" onclick="toggleMenu()">PORTAFOLIO</a></li>
+                <li><a href="#">¿QUIENES SOMOS?</a></li>
+                <li><a id="Content-button" href="https://api.whatsapp.com/send/?phone=%2B573107415917&text&type=phone_number&app_absent=0"><button>CONTACTO</button></a></li>
+            </ul>
+            <div class="sub-menu-wrap" id="SubMenu">
+                <div class="sub-menu">
+                    <a href="#" class="sub-menu-link">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script>
+
+        let subMenu = document.getElementById("SubMenu");
+
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+</html>
